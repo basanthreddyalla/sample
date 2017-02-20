@@ -33,6 +33,7 @@ public class CustomerController  {
 	@Autowired
 	private CustomerService customerService;
 	
+	//mvc view
 	@RequestMapping(value= "/getMVCCustomerById/{id}", method= {RequestMethod.GET})
 	public String customerIndex(@PathVariable("id") int customerId)
 	{

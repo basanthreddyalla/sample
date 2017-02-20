@@ -27,7 +27,7 @@ public class App  extends SpringBootServletInitializer
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(App.class);
     }
-    
+    /* this is used to integrate the hibernate with springboot Application */
     @Bean
     public HibernateJpaSessionFactoryBean sessionFactory() {
         return new HibernateJpaSessionFactoryBean();
